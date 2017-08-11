@@ -10,10 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170810174133) do
+ActiveRecord::Schema.define(version: 20170811062636) do
 
-  create_table "books", force: :cascade do |t|
+  create_table "authors", force: :cascade do |t|
     t.string "name"
   end
+
+# Could not dump table "books" because of following StandardError
+#   Unknown type 'belongs_to' for column 'author'
 
 end

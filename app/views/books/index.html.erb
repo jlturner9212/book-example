@@ -1,1 +1,5 @@
-<p>Hello world</p>
+<p>Listing books</p>
+
+<% @books.each do |b| %>
+<div><%= b.name %></div>
+<% end %>
